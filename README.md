@@ -48,6 +48,11 @@ Press `8` if you are already in the parameter menu, otherwise just press `1` to 
 
 *↦Troubleshooting: If this does not work, check that you have entered the correct parameters (like a correct size for shoes)*
 
+## Utilities 
+- Download Python 3.9.12 by clicking [here](https://www.python.org/downloads/release/python-3912/)
+- Download Firefox by clicking [here](https://www.mozilla.org/fr/firefox/new/)
+- Download Geckodriver by clicking [here](https://github.com/mozilla/geckodriver/releases)
+
 ## Disclaimer
 - Only for **educationnal, personal or good puposes**.
 - We **decline any responsability** in case of misuse of this code.
