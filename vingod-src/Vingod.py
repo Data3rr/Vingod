@@ -36,10 +36,11 @@ def rich_presence():
             large_text = f"Vingod - Vinted bot",
             details = "Version: Stable",
             state = "by 0xSpoofed",
+            buttons=[{"label": "Github", "url": "https://github.com/0xSpoofed/Vingod"}]
             )
     except Exception as e:
         pass
-    
+
     
 # <----- integrity checker ----->
 def integrity_checker():
