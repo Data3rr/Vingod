@@ -490,7 +490,7 @@ def bot():
                 if int(item[2].replace(" prix\xa0:", "")) <= int(int(mean(price_list)) - (int(mean(price_list)) * (int(decrease_margin)/100))):
                     driver.get(item[0])
                     picture = driver.find_element(By.XPATH,
-                                                "/html/body/main/div/section/div/main/div/section[1]/section/div[1]/figure[1]/a/img")
+                                                "/html/body/main/div/section/div/main/div/section[2]/div/div[1]/div/section/div/figure[1]/div/div/img")
                     date = driver.find_element(By.XPATH,
                                                 "/html/body/main/div/section/div/main/div/aside/div[1]/div[1]/div[2]/div[9]/div[2]/time")
                     location = driver.find_element(By.XPATH,
@@ -600,3 +600,4 @@ if __name__ == '__main__':
     integrity_checker()
     rich_presence()
     main(banner, c, w)
+
