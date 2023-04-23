@@ -498,7 +498,7 @@ def bot():
                     feedback = driver.find_element(By.XPATH,
                                                     "/html/body/main/div/section/div/main/div/aside/div[3]/a/div[2]/div[2]/div")
 
-                    item.append(picture.get_attribute("data-src"))
+                    item.append(picture.get_attribute("src"))
                     item.append("Day: " + ((date.get_attribute("title")).split(' '))[0] + "\nTime: " + ((date.get_attribute("title")).split(' '))[1])
                     try:
                         if len(((location.text).split(' '))[0]) > 15 :
@@ -600,4 +600,3 @@ if __name__ == '__main__':
     integrity_checker()
     rich_presence()
     main(banner, c, w)
-
