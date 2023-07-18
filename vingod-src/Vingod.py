@@ -436,7 +436,7 @@ def bot():
                 items = []
                 driver.get(link_builder(brand_id,type_id, size, count))
                 count = count + 1
-                items = items + driver.find_elements(By.CLASS_NAME, "web_ui__ItemBox__overlay")
+                items = items + driver.find_elements(By.CLASS_NAME, "new-item-box__overlay")
 
                 for item in items:
                     it1 = item.get_attribute('href')
@@ -455,7 +455,6 @@ def bot():
         
         # doublets deleter
         final_list = remove_duplicate(final_list)
-
         # extract price
         for item in final_list:
             try:
@@ -492,12 +491,11 @@ def bot():
                     picture = driver.find_element(By.XPATH,
                                                 "/html/body/main/div/section/div/main/div/section[2]/div/div[1]/div/section/div/figure[1]/div/div/img")
                     date = driver.find_element(By.XPATH,
-                                                "/html/body/main/div/section/div/main/div/aside/div[1]/div[1]/div[2]/div[9]/div[2]/time")
+                                                "/html/body/main/div/section/div/main/div/aside/div[1]/div[1]/div[2]/div/div[10]/div[2]/div/span")
                     location = driver.find_element(By.XPATH,
-                                                "/html/body/main/div/section/div/main/div/aside/div[1]/div[1]/div[2]/div[6]/div[2]")
+                                                "/html/body/main/div/section/div/main/div/aside/div[1]/div[1]/div[2]/div/div[7]/div[2]")
                     feedback = driver.find_element(By.XPATH,
                                                     "/html/body/main/div/section/div/main/div/aside/div[3]/a/div[2]/div[2]/div")
-
                     item.append(picture.get_attribute("src"))
                     item.append("Day: " + ((date.get_attribute("title")).split(' '))[0] + "\nTime: " + ((date.get_attribute("title")).split(' '))[1])
                     try:
