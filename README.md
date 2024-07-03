@@ -1,7 +1,7 @@
 ![Logo](https://i.imgur.com/3LL84iI.png)
 
 
-# Vingod
+# Vingod (No longer works)
 
 Vingod is a simple Vinted bot to find the best deals on items for you. No need to bother with discord bots, he just use a simple discord webhook. The parameters are of course 100% modifiable to adapt to your desires and wishes. 
 
